@@ -9,3 +9,14 @@ function getTextValueById(id){
     const textNumber = parseInt(textValue);
     return textNumber;
 }
+
+function showSectionById(id){
+    document.getElementById('donation-section').classList.add('hidden')
+    document.getElementById('history-section').classList.add('hidden')
+
+    document.getElementById(id).classList.remove('hidden')
+}
+function getStringValueById(id){
+    const stringValue = document.getElementById(id).innerText;
+    return stringValue;
+}
